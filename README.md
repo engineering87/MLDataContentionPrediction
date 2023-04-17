@@ -6,7 +6,7 @@ This is a project developed in .NET 6 and ML.NET library for the analysis and pr
 The project consists of three distinct modules: a data contention simulation module, which can be parameterized to simulate different application contexts; a module for generating the predictive model using ML.NET library; a module for managing and orchestrating simulations and machine learning models.
 
 ### Architecture
-
+<img width="600" src="https://github.com/engineering87/MLDataContentionPrediction/blob/main/source2.png" style="vertical-align:middle">
 
 ### The Case Study
 The case study is a didactic simulation of the data contention in a concurrent environment. The critical section is represented as a circular list of objects, a set of tasks tries to access the critical section by scanning the list in search of a non-locked slot.
