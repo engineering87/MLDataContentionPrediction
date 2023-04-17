@@ -11,6 +11,21 @@ The project consists of three distinct modules: a data contention simulation mod
 ### The Case Study
 The case study is a didactic simulation of the data contention in a concurrent environment. The critical section is represented as a circular list of objects, a set of tasks tries to access the critical section by scanning the list in search of a non-locked slot.
 
+### Model hypothesis
+For the experiment we consider the following assumptions:
+
+* The execution within the single slot of the critical section is of fixed duration and equal for each task
+* The number of tasks is no greater than the number of slots available within the critical section
+* The critical section scan time is 0
+
+So we have:
+
+* $𝑤_(k, d)$ represents the waiting time
+* $𝐷_(k,𝑑)$ represents dispatching time
+* $𝑆$ represents the time the slot is occupied
+* $𝑤_(𝑘,𝑑)=𝐷_(𝑘,𝑑)−𝑆$
+* $𝐷≥𝐾$
+
 ### How to configure it
 The simulation and machine learning model configurations are fully described in the JSON *appsettings.json* file within the orchestrator's project.
 
