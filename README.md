@@ -20,11 +20,11 @@ For the experiment we consider the following assumptions:
 
 So we have:
 
-* $𝑤_(k, d)$ represents the waiting time
-* $𝐷_(k,𝑑)$ represents dispatching time
+* $𝑤_(k, c, s)$ represents the waiting time
+* $𝐷_(k,c, s)$ represents dispatching time
 * $𝑆$ represents the time the slot is occupied
-* $𝑤_(𝑘,𝑑)=𝐷_(𝑘,𝑑)−𝑆$
-* $𝐷≥𝐾$
+* $𝑤_(𝑘,c,s)=𝐷_(𝑘,c,s)−𝑆$
+* $C≥𝐾$
 
 ### How to configure it
 The simulation and machine learning model configurations are fully described in the JSON *appsettings.json* file within the orchestrator's project.
